@@ -1,0 +1,91 @@
+.form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.form input,
+.form textarea {
+    color: var(--text-color-dark);
+    background-color: var(--bg-form-input);
+    margin: 15px 10px;
+    border-radius: 4px;
+}
+
+.form .MuiInputBase-root.MuiOutlinedInput-root {
+    padding: 0;
+}
+
+.form span {
+    border-radius: 4px;
+}
+
+.form svg {
+    fill: var(--bg-form-input);
+}
+
+.form .MuiFormLabel-root.MuiInputLabel-root {
+    color: var(--text-color-dark);
+}
+
+.form .MuiInputLabel-root.Mui-focused,
+.form .MuiInputLabel-root.MuiInputLabel-shrink {
+    color: var(--text-color-white);
+}
+
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:focus {
+    transition:
+        background-color 600000s 600000s,
+        color 600000s 600000s,
+        box-shadow 600000s 600000s !important;
+}
+
+.MuiFormLabel-root.MuiInputLabel-root.Mui-focused {
+    color: var(--blue);
+}
+
+.MuiFormLabel-root.MuiInputLabel-root.Mui-error {
+    color: var(--red);
+}
+
+.form .MuiInputBase-root.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: var(--text-color-white);
+}
+
+.form .MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--blue);
+}
+
+.form .MuiInputBase-root.MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+    border-color: var(--red);
+}
+
+.form__redirect-link {
+    color: var(--blue);
+}
+
+.form__redirect-link_inactive {
+    color: var(--text-color-grey);
+    pointer-events: none;
+}
+
+.form .MuiFormLabel-asterisk {
+    color: red;
+}
+
+.form .MuiButtonBase-root.Mui-disabled {
+    background-color: var(--bg-color-light-grey);
+}
+
+.form span.MuiButtonBase-root.Mui-disabled {
+    background-color: transparent;
+}
+
+.form .MuiTypography-root.MuiFormControlLabel-label.Mui-disabled {
+    color: var(--text-color-grey);
+}

@@ -1,0 +1,26 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--footer-height);
+    background-color: var(--bg-color-secondary);
+    box-shadow: 0 -5px 10px var(--text-color-grey);
+}
+
+.footer__container {
+    width: 100%;
+    max-width: var(--content-width);
+    background-color: var(--bg-color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--content-padding);
+}
+
+.footer__copyright {
+    text-align: start;
+}

@@ -1,0 +1,65 @@
+*:not(svg *) {
+    all: unset;
+    display: revert;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --bg-color-main: rgb(45, 45, 45);
+    --bg-color-secondary: rgb(60, 60, 60);
+    --bg-color-light-grey: rgb(114, 113, 113);
+    --bg-color-todo: rgb(75, 75, 75);
+    --bg-color-todo-hover: rgba(75, 75, 75, var(--hover-opacity));
+    --bg-color-todo-important: rgb(3, 112, 349);
+    --bg-color-todo-important-hover: rgba(3, 112, 349, var(--hover-opacity));
+    --bg-form-input: rgb(229, 238, 253);
+
+    --text-color-white: rgb(250, 255, 245);
+    --text-color-dark: rgb(45, 45, 45);
+    --text-color-grey: rgb(89, 89, 89);
+
+    --blue: #1976d2;
+    --red: #fd0404;
+
+    --transititon: all 0.125s ease-in-out;
+    --hover-opacity: 0.7;
+
+    --base-gap: 24px;
+
+    --content-width: 1280px;
+    --content-padding: 24px;
+    --header-height: 54px;
+    --footer-height: 40px;
+}
+
+body {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 18px;
+
+    color: var(--text-color-white);
+    background-color: var(--bg-color-main);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+    text-align: center;
+    height: 100vh;
+}
+
+main {
+    padding: var(--header-height) 0 var(--footer-height);
+    height: 100%;
+}

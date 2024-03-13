@@ -1,0 +1,75 @@
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 20px;
+    background-color: var(--bg-color-todo);
+    gap: var(--base-gap);
+    transition: var(--transititon);
+}
+
+.todo:hover {
+    background-color: var(--bg-color-todo-hover);
+}
+
+.todo__content {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.todo:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.todo:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.todo__title {
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: start;
+}
+
+.todo__description {
+    text-align: start;
+}
+
+.todo__actions {
+    display: flex;
+    gap: var(--base-gap);
+}
+
+.todo__action-button,
+.todo__action-button.MuiButtonBase-root {
+    cursor: pointer;
+    transition: var(--transititon);
+    color: var(--text-color-white);
+}
+
+.todo__action-button:hover {
+    opacity: var(--hover-opacity);
+}
+
+.todo.todo_important {
+    background-color: var(--bg-color-todo-important);
+}
+
+.todo.todo_important:hover {
+    background-color: var(--bg-color-todo-important-hover);
+}
+
+.todo.todo_completed {
+    text-decoration-line: line-through;
+}
